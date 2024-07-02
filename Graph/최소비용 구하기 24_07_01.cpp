@@ -5,11 +5,11 @@ using namespace std;
 
 const int INF = 1e9;
 
-priority_queue<pair<int, int>> pq; // weight, node ¼øÀ¸·Î ÀúÀå
+priority_queue<pair<int, int>> pq; // weight, node ìˆœìœ¼ë¡œ ì €ì¥
 vector<int> dist(1001, INF);
-vector<vector<pair<int, int>>> e(1001); // dist, node ·Î ÀúÀå
+vector<vector<pair<int, int>>> e(1001); // dist, node ë¡œ ì €ì¥
 vector<bool> visited(1001, false);
-int N, M; // N µµ½Ã ¼ö, M ¿§Áö ¼ö
+int N, M; // N ë„ì‹œ ìˆ˜, M ì—£ì§€ ìˆ˜
 int start, dest;
 
 
@@ -25,7 +25,7 @@ void dijkstra(int s) {
 			pq.pop();
 			continue;
 		}
-		distance = -pq.top().first; // heapQ À½¼öÃ³¸®
+		distance = -pq.top().first; // heapQ ìŒìˆ˜ì²˜ë¦¬
 		visited[cur] = true;
 		pq.pop();
 		
