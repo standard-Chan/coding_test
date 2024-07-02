@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-int N, K; // ¹°Ç° ¼ö, ÃÖ´ë ¹«°Ô
+int N, K; // Â¹Â°Ã‡Â° Â¼Ã¶, ÃƒÃ–Â´Ã« Â¹Â«Â°Ã”
 vector<pair<int, int>> wv;
 vector<vector<int>> dp(101, vector<int>(100001, 0));
 
