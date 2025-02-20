@@ -1,4 +1,4 @@
-package me.jeong;
+package me.jeong.dataStructure;
 /*
 구간 합 구하기
 S[n] = S[n-1] + an
@@ -9,8 +9,6 @@ i~j 합 = S[j] - S[i-1]
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.List;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class PrefixSum {

@@ -1,4 +1,4 @@
-package me.jeong;
+package me.jeong.dataStructure;
 
 /*
 4 2

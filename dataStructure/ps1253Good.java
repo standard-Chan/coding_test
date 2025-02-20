@@ -1,4 +1,4 @@
-package me.jeong;
+package me.jeong.dataStructure;
 /*
 시간제한 2초
 input 개수 : 2000

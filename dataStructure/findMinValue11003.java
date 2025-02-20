@@ -1,4 +1,4 @@
-package me.jeong;
+package me.jeong.dataStructure;
 /*
 25분 시작
 제한 시간 2.6초
