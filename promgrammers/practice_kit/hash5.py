@@ -37,3 +37,26 @@ def solution(genres, plays):
             answer.append(musicByGenre[genre][1][0]);
             
     return answer
+
+
+## 더 간략한 코드
+
+def solution2(genres, plays):
+    answer = []
+    musicByGenre = defaultdict(list);
+    total = defaultdict(int);
+    
+    # 저장
+    for idx, (genre, play) in enumerate(zip(genres, plays)):
+        musicByGenre[genre].append((idx,play))
+        total[genre]+=play
+    
+    # 정렬
+    for key, value in musicByGenre.items():
+        value.sort(key=lambda x: x[1], reverse=True)
+    sortedGenres = sorted(total.items(), key=lambda x: x[1], reverse=True)
+    
+    for genre, _ in sortedGenres:
+        answer.extend(i for i,_ in musicByGenre[genre][:2])
+    
+    return answer
