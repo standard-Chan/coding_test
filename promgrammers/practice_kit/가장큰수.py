@@ -1,9 +1,13 @@
-from functools import cmp_to_key
-
 def solution(numbers):
     nums = list(map(str, numbers))
     
-    nums.sort(key=cmp_to_key(lambda a, b: -1 if a+b > b+a else 1))
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] < nums[j] + nums[i]:
+                nums[i], nums[j] = nums[j], nums[i]
     
     result = ''.join(nums)
-    return '0' if result[0] == '0' else result
+    if result[0] == '0': 
+        return '0'
+        
+    return result
