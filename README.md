@@ -10,3 +10,8 @@
 ### 주식가격
 구현 방식이 여러가지인데, 차짓하면 복잡한 구현이 될 수 있다
 - https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=python3
+
+### 소수 찾는 알고리즘
+계속해서 for i in range(N**(1/2)): 로 처리한다.  2가지 문제가 있다.
+- int(N**(1/2)) 로 처리해야함
+- range(int(N**(1/2)) + 1) : +1 해줘야한다.
